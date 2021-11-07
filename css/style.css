@@ -1,0 +1,116 @@
+@import './animations.css';
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  user-zoom: none;
+}
+body {
+  border: 2px solid lightgray;
+  margin: 20px;
+  height: 95vh;
+  box-shadow: 5px 5px lightgray;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #047aed;
+  padding: 2px;
+
+  margin: 0 5px;
+}
+a:hover {
+  border: 1px solid #047aed;
+  border-bottom: 2px white solid;
+  box-shadow: 3px 3px #047aed;
+}
+.navbar .flex {
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar {
+  background-color: white;
+  color: white;
+  height: 70px;
+}
+.container {
+  /* max-width: 1100px; */
+  overflow: auto;
+  padding: 0 40px;
+}
+.flex {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.url_container {
+  margin-top: 10vw;
+  width: 100%;
+
+  text-align: center;
+}
+.input_main {
+}
+.url_input {
+  /* border: none; */
+  width: 500px;
+  border-radius: 0px;
+  background-color: white;
+  border: 1px solid #047aed;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 3px 3px #047aed;
+  padding: 2px;
+  outline: none;
+  caret-color: #047aed;
+}
+
+.url_submit_button {
+  border-radius: 0px;
+  background-color: white;
+  border: 1px solid #047aed;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 3px 3px #047aed;
+  padding: 2px;
+  color: #047aed;
+}
+.logo {
+  color: #047aed;
+}
+
+/* Footer Main */
+.footer_main {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.footer_p {
+  color: grey;
+  font-size: 10px;
+}
