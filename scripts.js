@@ -1,13 +1,21 @@
-let server = 'https://fhjv0wnzff.execute-api.us-east-1.amazonaws.com/dev/';
-let xhr = new XMLHttpRequest();
-xhr.open('POST', server, true);
-xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+var myHeaders = new Headers();
+myHeaders.append('Content-Type', 'application/json');
 
-xhr.onreadystatechange = function () {
-  // Call a function when the state changes.
-  if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-    console.log(XMLHttpRequest.response);
-  }
+var raw = JSON.stringify({
+  url: 'https://hasdadasdasdasda.com',
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow',
 };
-xhr.send({ url: 'https://hasdadasdasdasda.com' });
-console.log('dsad');
+
+fetch(
+  'https://fhjv0wnzff.execute-api.us-east-1.amazonaws.com/dev/',
+  requestOptions
+)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.log('error', error));
