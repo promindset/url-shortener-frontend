@@ -1,4 +1,5 @@
 @import './animations.css';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -78,18 +79,18 @@ a:hover {
   align-items: center;
 }
 
-.url_container {
-  margin-top: 10vw;
-  width: 100%;
+.logo {
+  color: #047aed;
+}
 
+/* Input */
+.input_container {
+  padding-top: 50px;
   text-align: center;
+  min-height: 20%;
 }
-.input_main {
-}
-.url_input {
-  /* border: none; */
-  width: 40vw;
-  height: 5vh;
+
+.input_url {
   border-radius: 0px;
   background-color: white;
   border: 1px solid #047aed;
@@ -98,22 +99,23 @@ a:hover {
   padding: 2px;
   outline: none;
   caret-color: #047aed;
+  margin: 2px;
+  /* size */
+  font-size: 2vh;
+  width: 70vw;
 }
 
-.url_submit_button {
+.input_submit {
   border-radius: 0px;
   background-color: white;
   border: 1px solid #047aed;
   font-family: 'Courier New', Courier, monospace;
   box-shadow: 3px 3px #047aed;
   padding: 2px 4px 2px 4px;
-  margin: 0px 4px 0px 4px;
+  margin: 2px 4px 2px 4px;
   color: #047aed;
-  width: 10vw;
-  height: 5vh;
-}
-.logo {
-  color: #047aed;
+  /* size */
+  font-size: 2vh;
 }
 
 /* Footer Main */
@@ -125,5 +127,10 @@ a:hover {
 }
 .footer_p {
   color: grey;
-  font-size: 10px;
+  font-size: 1vw;
+}
+
+.logo_text {
+  white-space: nowrap;
+  display: inline-block;
 }

@@ -8,6 +8,7 @@
     <title>Shorten URL's | Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media-queries.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <!-- FontAwsome v5.9.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
@@ -18,16 +19,13 @@
 
 
 <body>
-
     <!-- Navbar -->
     <div class="navbar">
         <div class="container flex ">
             <!-- Navbar/Logo -->
             <div class="logo">
-                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-                <lord-icon src="https://cdn.lordicon.com/wjwuvtno.json" trigger="loop"
-                    colors="primary:#047aed,secondary:#e4e4e4" stroke="20" style="width:50px;height:50px">
-                </lord-icon></i> Shorten URL's
+                <i class="fas fa-link"></i>
+                <div class="logo_text">Shorten URL's</div>
             </div>
             <!-- Navbar/Links -->
             <nav>
@@ -41,12 +39,10 @@
         </div>
     </div>
 
-    <!-- body/Input -->
-    <div class="url_container">
-        <div class="input_main">
-            <input class="url_input" type="search" placeholder="Paste the link here">
-            <button class="url_submit_button" type="submit">Shorten</button>
-        </div>
+    <!-- Input -->
+    <div class="input_container">
+        <input id="1" class="input_url" type="search" placeholder="Paste the link here">
+        <button onclick="submitURL()" class="input_submit" type="submit">Shorten</button>
     </div>
 
     <!-- Footer -->
