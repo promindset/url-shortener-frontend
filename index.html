@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale='1.0'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shorten URL's | Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media-queries.css">
@@ -32,19 +32,26 @@
         </div>
     </div>
 
-
     <!-- Input -->
+
     <div class="input_container">
+        <div class="loading_container">
+            <p id='loading'></p>
+        </div>
+
         <input autocomplete="off" id="1" class="input_url" type="url" placeholder="Paste the link here">
-        <button onclick="submitURL()" class="input_submit" type="submit"> Shorten </button>
+        <button id="submit" onclick="submitURL()" class="input_submit" type="submit"> Shorten </button>
+        <button style="display: none;" id="resubmit" onclick="newURL()" class="input_submit" type="submit">Create New
+            URL</button>
+
     </div>
+
     <!-- Result -->
-    <div class="result_container">
-        <input value="http://127.0.0.1:5501/index.html" disabled id='result_text' />
+    <div id="result_container" class="result_container">
+        <input type="url" value="" disabled id='result_text' />
         <div class="copy_button_container">
             <button onclick="copyText()" id="copy_button">Copy</button>
         </div>
-
     </div>
 
 

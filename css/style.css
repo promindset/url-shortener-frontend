@@ -57,26 +57,31 @@ body {
   text-align: center;
   height: fit-content;
   padding: 20px;
-  width: 100%;
 }
 .input_url {
+  font-weight: 600;
   padding: 10px;
-  width: 50%;
-  box-shadow: 3px 3px #047aed;
+  margin: 10px;
+  width: 60%;
   border: 2px solid #047aed;
+  background-color: white;
+  box-shadow: 3px 3px #047aed;
   caret-color: #047aed;
   outline: none;
+  color: grey;
 }
 .input_submit {
   color: gray;
+  font-weight: bold;
+
   padding: 10px;
   border: 2px solid #047aed;
   background-color: white;
   box-shadow: 3px 3px #047aed;
   width: 150px;
   margin: 20px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
 }
 .input_submit:hover {
   border: 2px solid lightgray;
@@ -91,17 +96,16 @@ body {
 /* Result */
 .result_container {
   text-align: center;
-
-  height: fit-content;
+  display: none;
 }
 #result_text {
   padding: 10px;
   width: 100vw;
   text-align: center;
   border: none;
-  color: black;
+  color: grey;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bo;
+  font-weight: 600;
   border-radius: none;
   user-select: all;
   background-color: ghostwhite;
@@ -109,15 +113,15 @@ body {
 }
 #copy_button {
   color: gray;
+  font-weight: 600;
   padding: 10px;
   border: 2px solid #047aed;
   background-color: white;
   box-shadow: 3px 3px #047aed;
   width: 150px;
   margin: 20px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
   cursor: pointer;
 }
 #copy_button:hover {
@@ -129,4 +133,9 @@ body {
   background-color: ghostwhite;
   box-shadow: 10 15px ghostwhite;
   transform: translateY(4px);
+}
+.loading_container {
+  border: 1px solid white;
+  height: 5vh;
+  margin: 5px;
 }
