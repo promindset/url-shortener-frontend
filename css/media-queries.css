@@ -1,13 +1,43 @@
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 700px) {
-  .navbar a {
-    display: block;
-    font-size: 3vw;
+@media screen and (max-width: 800px) {
+  .header_logo_text {
+    display: inline-block;
+    font-size: 20px;
   }
-  .logo_text {
-    font-size: 3vw;
+  .header_logo_icon {
+    font-size: 40px;
   }
-  .fas {
-    font-size: 3vw;
+  .input_url {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header_logo_text {
+    display: inline-block;
+    font-size: 12px;
+  }
+  .header_logo_icon {
+    font-size: 15px;
+  }
+  .input_url {
+    width: 100%;
+  }
+}
+@media screen and (device-aspect-ratio: 9/16) {
+  select,
+  textarea,
+  input[type='text'],
+  input[type='password'],
+  input[type='datetime'],
+  input[type='datetime-local'],
+  input[type='date'],
+  input[type='month'],
+  input[type='time'],
+  input[type='week'],
+  input[type='number'],
+  input[type='email'],
+  input[type='tel'],
+  input[type='url'] {
+    font-size: 16px;
   }
 }

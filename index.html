@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale='1.0'>
     <title>Shorten URL's | Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media-queries.css">
@@ -15,46 +15,49 @@
         integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./scripts.js"></script>
-</head>
 
+</head>
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
-        <div class="container flex ">
-            <!-- Navbar/Logo -->
-            <div class="logo">
-                <i class="fas fa-link"></i>
-                <div class="logo_text">Shorten URL's</div>
-            </div>
-            <!-- Navbar/Links -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                        <a href="./about.html">About</a>
-                    </li>
-                </ul>
-            </nav>
+    <div class="header_container">
+        <!-- Navbar/Logo -->
+        <div class="header_logo_container">
+            <i class="fas fa-link header_logo_icon"></i>
+            <div class="header_logo_text">Shorten URL's</div>
+        </div>
+        <!-- Navbar/Links -->
+        <div class="header_navbar_container">
+            <a href="./info.html" class="fas fa-info-circle header_navbar_icon"></a>
         </div>
     </div>
+
 
     <!-- Input -->
     <div class="input_container">
-        <input id="1" class="input_url" type="search" placeholder="Paste the link here">
-        <button onclick="submitURL()" class="input_submit" type="submit">Shorten</button>
+        <input autocomplete="off" id="1" class="input_url" type="url" placeholder="Paste the link here">
+        <button onclick="submitURL()" class="input_submit" type="submit"> Shorten </button>
     </div>
-
-    <!-- Footer -->
-    <div class="footer_main">
-        <div class="footer_p">
-            CopyRight
-            <i class="fa fa-copyright"></i> 2021
-            | Powered By Najjar Soft Ink | All Rights Reserved
-            <i class="fa fa-registered"></i>
-
+    <!-- Result -->
+    <div class="result_container">
+        <input value="http://127.0.0.1:5501/index.html" disabled id='result_text' />
+        <div class="copy_button_container">
+            <button onclick="copyText()" id="copy_button">Copy</button>
         </div>
 
+    </div>
+
+
+    <!-- Footer -->
+    <!-- <div class="footer_container">
+        <p class="footer_p">CopyRight</p>
+        <i class="fa fa-copyright footer_p"></i>
+        <p class="footer_p">2021</p>
+        <p class="footer_p">| Powered By Najjar Soft LTD
+        </p>
+        <p class="footer_p">| All Rights Reserved</p>
+        <i class="fa fa-registered footer_p"></i>
+    </div> -->
 </body>
 
 </html>

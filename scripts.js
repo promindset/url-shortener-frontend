@@ -31,6 +31,12 @@ function submitURL() {
 
 // Add Data To The Main Page
 function addData(result) {
-  // display data on main page
-  console.log('result:', result);
+  let result2 = JSON.parse(result);
+  document.getElementById('result_text').value = result2.shortenedURL;
+}
+
+// viewer
+function copyText() {
+  let data = document.getElementById('result_text');
+  navigator.clipboard.writeText(data.value);
 }
