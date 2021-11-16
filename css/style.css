@@ -139,3 +139,15 @@ body {
   height: 5vh;
   margin: 5px;
 }
+
+/* Footer */
+.footer_container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.5em;
+}
+.footer_p {
+}
